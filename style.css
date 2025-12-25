@@ -54,4 +54,4 @@ button {
 @keyframes fall {
   from { transform: translateY(-10px) rotate(0); }
   to { transform: translateY(100vh) rotate(360deg); }
-}
+  }
