@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-card {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  width: 330px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,.25);
+}
+
+h1 { color: #ff5fa2; }
+h2 { color: #ff85c1; }
+
+p {
+  font-size: 14px;
+  color: #555;
+  white-space: pre-line;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  background: #ff69b4;
+  color: white;
+}
+
+/* CONFETTI */
+#confetti-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: .85;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  from { transform: translateY(-10px) rotate(0); }
+  to { transform: translateY(100vh) rotate(360deg); }
+}
